@@ -3,10 +3,14 @@ import {BsFillCartFill, BsFillSaveFill } from 'react-icons/bs'
 import {TbTruckDelivery} from 'react-icons/tb'
 import {MdFavorite, MdHelp} from 'react-icons/md'
 import {FaWallet, FaUserFriends} from 'react-icons/fa'
-import { useState } from 'react'
+import { useState } from 'react';
+
 
 const Navbar = () => {
 const [nav, setNav]=useState(false)
+
+
+
 
 
   return (
@@ -30,7 +34,7 @@ const [nav, setNav]=useState(false)
         </div>
         <div className='bg-gray-200 rounded-full flex items-center
             px-2 w-[200px] sm:w-[400px] lg:w-[500px] '>
-              <AiOutlineSearch size={25}/>
+              <AiOutlineSearch size={25} className='cursor-pointer'/>
               <input className='bg-transparent p-2 w-full focus:outline-none' type="text" placeholder='Search foods'/>
             </div>
             {/*cart button*/}
